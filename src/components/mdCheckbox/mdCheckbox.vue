@@ -2,7 +2,7 @@
   <div class="md-checkbox" :class="[themeClass, classes]">
     <div class="md-checkbox-container" @click.stop="toggleCheck" tabindex="0">
       <input type="checkbox" :name="name" :id="id" :disabled="disabled" :value="value" tabindex="-1">
-      <md-ink-ripple :md-disabled="disabled" />
+      <md-ink-ripple/>
     </div>
 
     <label :for="id || name" class="md-checkbox-label" v-if="$slots.default">
